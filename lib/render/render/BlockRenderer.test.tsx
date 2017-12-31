@@ -331,7 +331,7 @@ describe('BlockRenderer', () => {
       expect(prettifyMsgs(log.finalize())).toEqual('');
     });
 
-    it('alerts the user to choice without title', () => {
+    it('alerts the user to choice without text', () => {
       var log = new Logger();
       var blocks: Block[] = [
         {

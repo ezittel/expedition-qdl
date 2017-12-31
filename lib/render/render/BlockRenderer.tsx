@@ -363,15 +363,13 @@ export class BlockRenderer {
     // (\{.*\})?                Optionally match a final JSON blob (greedy)
     // $                        End of string
     try {
-      const m = line.match(/^[\*-]\s*(\{\{(.*?)\}\})?\s*((?:[^{]|(?:{{[^}]*}})*)*)(\{.*\})?$/) as any;
-      /*
-      if (m === null) {
+      const m = line.match(/^[\*-]\s*(\{\{(.*?)\}\})?\s*((?:[^{]|(?:{{[^}]*}})*)*)(\{.*\})?$/);
+      if (!m) {
         throw new Error('Match failed');
       }
-      */
       return {
-        visible: m[2],
-        text: m[3].trim(),
+        visible: m[2] || undefined,
+        text: (m[3]) ? m[3].trim() : '',
         json: (m[4]) ? JSON.parse(m[4]) : {},
       };
     } catch(e) {
