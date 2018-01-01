@@ -267,8 +267,8 @@ describe('CrawlerBase', () => {
             </choice>
           </roleplay>
         </quest>`)('quest > :first-child');
-      let uniqueCounter: {[line: number]: boolean} = {};
-      let lineOrder: number[] = [];
+      const uniqueCounter: {[line: number]: boolean} = {};
+      const lineOrder: number[] = [];
       const crawler = new CrawlTest(null, (q: CrawlEntry<Context>, nodeStr: string, id: string, line: number) => {
         lineOrder.push(line);
         if (Object.keys(uniqueCounter).length < 5 && uniqueCounter[line]) {
