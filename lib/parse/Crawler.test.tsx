@@ -5,7 +5,6 @@ import {defaultContext, Context} from './Context'
 declare var global: any;
 
 const cheerio: any = require('cheerio');
-const window: any = cheerio.load('<div>');
 
 class CrawlTest extends CrawlerBase<Context> {
   efn: ((q: CrawlEntry<Context>, e: CrawlEvent)=>any)|null;

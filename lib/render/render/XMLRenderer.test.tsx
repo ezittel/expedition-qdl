@@ -1,6 +1,4 @@
-import {Block} from '../block/BlockList'
 import {XMLRenderer} from './XMLRenderer'
-import TestData from '../TestData'
 
 const expect: any = require('expect');
 const cheerio: any = require('cheerio') as CheerioAPI;

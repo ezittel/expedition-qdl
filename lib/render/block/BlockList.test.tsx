@@ -1,5 +1,4 @@
-import {Block, BlockList} from './BlockList'
-import TestData from '../TestData'
+import {BlockList} from './BlockList'
 
 const expect: any = require('expect');
 

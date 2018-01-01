@@ -91,7 +91,6 @@ export class BlockList {
     // continuation of bulleted strings)
     // The result is a map of indent level to Block[].
     const split = md.split('\n');
-    const accumulated: string[] = [];
     let prevEmpty = false;
     let currBlock: Block|null = null;
     for (let lineNumber = 0; lineNumber < split.length; lineNumber++) {

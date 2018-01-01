@@ -1,6 +1,5 @@
 import {Block} from './block/BlockList'
 import {LogMessage, Logger, prettifyMsg, prettifyMsgs} from './Logger'
-import TestData from './TestData'
 
 const expect: any = require('expect');
 

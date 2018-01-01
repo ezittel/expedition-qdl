@@ -7,9 +7,6 @@ import TestData from './TestData'
 const prettifyHTML = (require('html') as any).prettyPrint;
 
 const expect: any = require('expect');
-const cheerio: any = require('cheerio') as CheerioAPI;
-
-
 
 describe('BlockRenderer', () => {
   // BlockRenderer is stateless

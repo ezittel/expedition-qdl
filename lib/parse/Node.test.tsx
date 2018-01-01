@@ -3,7 +3,6 @@ import {Context, defaultContext} from './Context'
 declare var global: any;
 
 const cheerio = require('cheerio') as CheerioAPI;
-const window: any = cheerio.load('<div>');
 
 describe('Node', () => {
   describe('getNext', () => {
